@@ -1,0 +1,78 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c36; /* Dark background color */
+  color: #ffffff; /* Light text color */
+  font-family: 'Arial', sans-serif; /* Choose a modern font */
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #363b44; /* Slightly darker background color */
+  border-radius: 12px; /* Rounded corners */
+  overflow: hidden;
+  width: 80%; /* Adjust the width of the container */
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #2e333c; /* Darker background for thumbnails */
+  width: 100%;
+  overflow-x: auto;
+}
+
+.thumbnail {
+  margin: 0 8px; /* Increase margin for thumbnails */
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: transform 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.thumbnail:hover, .thumbnail:focus {
+  transform: scale(1);
+  border-color: #61dafb; /* Highlight border color on hover */
+}
+
+.main-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+button {
+  background-color: #61dafb; /* Button background color */
+  color: #282c36; /* Button text color */
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+button:hover, button:focus {
+  background-color: #4fa3d1; /* Darker background on hover/focus */
+}
+
+/* Add a label for the current page */
+label {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
